@@ -61,7 +61,7 @@ class CurryFunction(object):
         if checkCall(self.argspec, newArgl, newArgd):
             return self.function(*newArgl, **newArgd)
         else:
-            return Curry(self.function, *newArgl, **newArgd)
+            return CurryFunction(self.function, *newArgl, **newArgd)
 
 
 
