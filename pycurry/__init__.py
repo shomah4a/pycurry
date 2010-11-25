@@ -5,7 +5,7 @@ import curry
 
 def curryfunc(func):
 
-    return curry.Curry(func)
+    return curry.CurryFunction(func)
 
 
 

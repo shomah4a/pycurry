@@ -39,7 +39,7 @@ def checkCall(spec, argl, argd):
 
 
 
-class Curry(object):
+class CurryFunction(object):
 
     def __init__(self, func, *argl, **argd):
 
